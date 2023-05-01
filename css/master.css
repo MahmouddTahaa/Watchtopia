@@ -1,3 +1,55 @@
+/* Start Selection */
+::selection {
+    background-color: red;
+    color: black;
+}
+/* End Selection */
+
+/* Start Button To Go Top */
+.btn-go-to-top a {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+/* End Button To Go Top */
+
+/* Start Scroll Custimization  */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+/* End  Scroll Custimization*/
+
+
+
+
 /* Start Global Rules */
 * {
     box-sizing: border-box;
@@ -150,9 +202,12 @@ i {
     color: white;
 }
 
+/* End Header */
+
+/* Start Main => Hero Section */
 
 .hero {
-    background-image: url(../images/hero-bg.jpg);
+    background-image: linear-gradient(to right , rgba(0 , 0, 0 , 0.9) 0% , rgba(0,0,0,0.5 ) 100% ) , url(../images/hero-bg.jpg) ;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -289,3 +344,173 @@ i {
 .hero .watchnow .btn:hover i {
     color: black;
 }
+
+/* End Main => Hero Section */
+
+
+/* Start Main => Updating Section */
+
+.upcoming {
+    padding: 80px 0;
+    background-image:   url(../images/upcoming-bg.png);
+    height: 100vh;
+}
+
+
+.upcoming .container .upcoming-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upcoming .container .upcoming-heading .info p {
+    color: red;
+    margin-bottom: 15px;
+
+}
+
+.upcoming .container .upcoming-heading .info h1 {
+    margin: 0;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.upcoming .container .upcoming-heading .actions button {
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px 25px;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    cursor: pointer;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    border: none;
+}
+
+.upcoming .container .upcoming-heading .actions button:hover {
+    border: 2px solid red;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.upcoming .container .movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(200px , 1fr));
+    gap: 70px;
+}
+
+.upcoming .container .movies .movie-card {
+    width: 225px;
+    height: 100px;
+    margin-top: 50px;
+
+}
+
+
+.upcoming .container .movies .movie-card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.5s;
+    -webkit-transition: 1s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.upcoming .container .movies .movie-card img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    margin-bottom: 10px;
+}
+
+.upcoming .container .movies .movie-card .movie-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.upcoming .container .movies .movie-card .movie-info h3 {
+    color: white;
+    text-transform: capitalize;
+    font-weight: 800;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    cursor: pointer;
+}
+
+.upcoming .container .movies .movie-card .movie-info h3:hover {
+    color: red;
+}
+
+.upcoming .container .movies .movie-card .movie-info .date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.upcoming .container .movies .movie-card .movie-info .date .movie-date {
+    color: red;
+}
+
+.upcoming .container .movies .movie-card .movie-info .date i {
+    color: red;
+}
+
+.upcoming .container .movies .movie-card .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upcoming .container .movies .movie-card .details .movie-quality {
+    color: white;
+    padding: 5px 7px ;
+    border: 3px solid white;
+    font-weight: bold;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.upcoming .container .movies .movie-card .details i {
+    color: red;
+    margin-right: 5px;
+}
+
+.upcoming .container .movies .movie-card .details time {
+    color: red;
+}
+
+
+
+
+
+
+
