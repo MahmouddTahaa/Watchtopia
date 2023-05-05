@@ -44,6 +44,35 @@ h4 {
   font-weight: 550;
 }
 
+
+/* Start Scroll Custimization  */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+/* End  Scroll Custimization*/
+
+/* Start Selection */
+::selection {
+  background-color: red;
+  color: black;
+}
+/* End Selection */
+
 .btn {
   display: inline-block;
   background: #ff0000;
