@@ -341,7 +341,7 @@ h4 {
   max-width: 1100px;
   margin: auto;
   padding: 40px;
-}
+  }
 
 .footer-lists {
   display: flex;
@@ -352,9 +352,32 @@ h4 {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 5px;
+  margin-bottom:20px ;
 }
 
+.footer ul li {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
 
+.footer ul li:not(.list-head):hover {
+  margin-left: 15px;
+  box-shadow: 1px 1px 15px 1px #0f0f0f;
+  -webkit-filter: brightness(300%);
+  border: none;
+  outline: none;
+} 
+
+.footer ul li a {   
+  text-decoration: none;
+}
+
+.footer ul li  {   
+  margin-bottom: 10px;
+}
 
 .divider {
   width: 100%;
@@ -363,11 +386,42 @@ h4 {
   margin: 30px 0;
 }
 
-.social-icons img {
-  width: 25px;
-  height: 25px;
-  margin-right: 25px;
+.footer .social-icons  {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
+
+.footer .social-icons a {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.footer .social-icons a:hover {
+  filter: brightness(150%);
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  -webkit-filter: brightness(150%);
+}
+
+.fa-facebook ,
+.fa-twitter {
+    color: #2e89ff;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-instagram{
+    color: mediumvioletred;
+    }
 
 /* Modal */
 .modal {
