@@ -179,38 +179,6 @@ header .container .control .profile-btn a img  {
     position: relative;
 }
 
-
-
-header .container .control .btn {
-    width: 120px;
-    height: 40px;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-    margin-left: 15px;
-    color: white;
-    text-transform: uppercase;
-    background-color: black;
-    border: 3px solid red;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    cursor: pointer;
-}
-
-header .container .control button:hover {
-    background-color: red;
-    color: black;
-}
-
 i {
     color: white;
 }
