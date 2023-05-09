@@ -54,7 +54,7 @@ $stmt->bind_param("sss",
 
 // -EXCUTING THE SQL STATEMENT-
 if ($stmt->execute()) {
-  header("Location: ./home.html");
+  header("Location: ./index.php");
   exit;
 }
 

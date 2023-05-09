@@ -25,18 +25,23 @@ if (isset($_SESSION["user_id"])) {
     <meta charset="UTF-8">
     <title>Watchtopia</title>
     <style>
-      .x {
+    .x {
         text-decoration: none;
         color:white;
         border: none;
         padding: 0px 15px 0px 15px;
         margin-left: 20px;
         transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-      }
-      .x:hover {
+    }
+    .x:hover {
         color: red;
         ;
-      }
+    }
+
+    .y:hover  {
+        background-color: red;
+        border-radius: 7px;
+    }
     </style>
     <!-- Render all elements in normal mode File  -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -100,13 +105,13 @@ if (isset($_SESSION["user_id"])) {
                     </div>
         
                     <div class="profile-btn">
-                        <a href="profile.html">
+                        <a href="profile.html" class="y">
                             <i class="fa-solid fa-circle-user"></i>
                         </a>
                     </div>
                     <div class="user" style="color: white;">
                         <?php if (isset($user)): ?>
-                          <p>Hello, <?= htmlspecialchars($user["name"]) ?></p>
+                        <p>Hello, <?= htmlspecialchars($user["name"]) ?></p>
                         <?php else: ?>
     <?php endif; ?></div>
                     <div class="user" style="color: white;"><a class="x" href="./logout.php">Log Out</a></div>
