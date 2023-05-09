@@ -24,6 +24,20 @@ if (isset($_SESSION["user_id"])) {
 <head>
     <meta charset="UTF-8">
     <title>Watchtopia</title>
+    <style>
+      .x {
+        text-decoration: none;
+        color:white;
+        border: none;
+        padding: 0px 15px 0px 15px;
+        margin-left: 20px;
+        transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+      }
+      .x:hover {
+        color: red;
+        ;
+      }
+    </style>
     <!-- Render all elements in normal mode File  -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Font awesome File -->
@@ -35,6 +49,7 @@ if (isset($_SESSION["user_id"])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
     <body>
         <div class="btn-go-to-top">
@@ -89,7 +104,12 @@ if (isset($_SESSION["user_id"])) {
                             <i class="fa-solid fa-circle-user"></i>
                         </a>
                     </div>
-                    <div class="user" style="color: white;"><p>Hello, user</p></div>
+                    <div class="user" style="color: white;">
+                        <?php if (isset($user)): ?>
+                          <p>Hello, <?= htmlspecialchars($user["name"]) ?></p>
+                        <?php else: ?>
+    <?php endif; ?></div>
+                    <div class="user" style="color: white;"><a class="x" href="./logout.php">Log Out</a></div>
                 </div>
             </div>
         </header>

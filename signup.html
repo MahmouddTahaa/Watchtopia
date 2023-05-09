@@ -7,7 +7,8 @@
 
   <link rel="stylesheet" href="css/signup.css">
   <link rel="icon" type="image/x-icon" href="images/W.png">
-
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+  <script src="./js/validation.js" defer></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
     <div class="form-box login">
       <h2>SIGN UP</h2>
 
-      <form action="process-signup.php" method="POST" novalidate>
+      <form action="process-signup.php" method="POST" novalidate id="signup">
         <div class="input-box">
           <span class="icon">
             <ion-icon name="person-circle-outline"></ion-icon>

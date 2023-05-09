@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       session_regenerate_id();
       $_SESSION["user_id"] = $user["id"];
 
-      header("Location: home.html");
+      header("Location: index.php");
       exit;
     }
   }
